@@ -30,6 +30,7 @@ tenure = st.slider('Tenure',0,10)
 num_of_products = st.slider('Products',1,20)
 has_credit_card = st.selectbox('has Credit Card',[0,1])
 is_active_member = st.selectbox('Is Active Memeber ',[0,1])
+estimated_salary = st.number_input('Extimated Salary')
 
 input_data = {
     'CreditScore':[credit_score],
@@ -40,6 +41,7 @@ input_data = {
 ,'NumOfProducts':[num_of_products]
 ,'HasCrCard':[has_credit_card]
 ,'IsActiveMember':[is_active_member]
+,'EstimatedSalary' : [estimated_salary]
 }
 
 
