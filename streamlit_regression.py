@@ -6,7 +6,8 @@ import pickle
 import streamlit as st
 
 
-model = tf.keras.models.load_model('regression.keras')
+model = tf.keras.models.load_model("regression.keras", compile=False)
+
 
 #load the encoder and scaler
 with open('ohe_geo.pkl','rb') as file:
